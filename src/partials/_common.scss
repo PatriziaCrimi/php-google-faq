@@ -5,10 +5,18 @@ body {
   font-weight: $font_weight;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container,
 .container-fluid {
   margin: 0 auto;
   padding: 0 $padding_unit;
+}
+
+.container-fluid {
+  height: $full_height;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */

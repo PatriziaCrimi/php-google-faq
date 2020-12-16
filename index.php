@@ -66,18 +66,20 @@
           <div class="container-fluid">
             <div class="row">
               <div id="nav-left">
-                <i class="fas fa-bars"></i>
+                <div class="burger-icon">
+                  <i class="fas fa-bars"></i>                  
+                </div>
                 <h1> <?php echo($title); ?> </h1>
               </div>
               <div id="nav-right">
-                <div class="app">
+                <a class="app" href="#">
                   <i class="fas fa-ellipsis-h"></i>
                   <i class="fas fa-ellipsis-h"></i>
                   <i class="fas fa-ellipsis-h"></i>
-                </div>
-                <div class="user">
+                </a>
+                <a class="user" href="#">
                   <img src="img/user.jpg" alt="User picture">
-                </div>
+                </a>
               </div>
             </div>
           </div>   <!-- Closing Nav container -->

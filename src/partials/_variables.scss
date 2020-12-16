@@ -11,12 +11,18 @@ $title_weight: $font_weight + 100;
 $primary_color: rgba(0,0,0,0.87);
 $secondary_color: #3c4043;
 $primary_bg_color: #fff;
+$icon_color: #5f6368;
+$hover_bg_color: rgba(60,64,67,0.08);
 
 // Dimensions
 $full_width: 100%;
+$full_height: 100%;
 $line_height: 24px;
 $height_navbar: 60px;
 
 // Margins & Padding
 $padding_unit: 20px;
 $margin_unit: 10px;
+
+// Transition times
+$hover_time: 0.25s;
