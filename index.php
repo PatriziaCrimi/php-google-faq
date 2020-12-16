@@ -59,7 +59,73 @@
       'name' => 'Termini',
       'url' => '#',
     ],
-  ];
+  ];  // Closing footer links list
+  $languages_list = [
+    [
+      'language' => 'Afrikaans',
+      'code' => 'af',
+    ],
+    [
+      'language' => 'Bahasa Indonesia',
+      'code' => 'id',
+    ],
+    [
+      'language' => 'Bahasa Melayu',
+      'code' => 'ms',
+    ],
+    [
+      'language' => 'Català',
+      'code' => 'ca',
+    ],
+    [
+      'language' => 'Čeština',
+      'code' => 'cs',
+    ],
+    [
+      'language' => 'Dansk',
+      'code' => 'da',
+    ],
+    [
+      'language' => 'Deutsch',
+      'code' => 'de',
+    ],
+    [
+      'language' => 'Eesti',
+      'code' => 'et',
+    ],
+    [
+      'language' => 'English',
+      'code' => 'en',
+    ],
+    [
+      'language' => 'English (United Kingdom)',
+      'code' => 'en-GB',
+    ],
+    [
+      'language' => 'Español',
+      'code' => 'es',
+    ],
+    [
+      'language' => 'Italiano',
+      'code' => 'it',
+    ],
+    [
+      'language' => 'Kiswahili',
+      'code' => 'sw',
+    ],
+    [
+      'language' => 'Latviešu',
+      'code' => 'lv',
+    ],
+    [
+      'language' => 'Lietuvių',
+      'code' => 'lt',
+    ],
+    [
+      'language' => 'Magyar',
+      'code' => 'hu',
+    ],
+  ];  // Closing languages list
 ?>
 
 <!-- ............................. HTML ............................. -->
@@ -132,7 +198,14 @@
               <div class="language-choice">
                 <label for="language">Cambia lingua:</label>
                 <select id="language" name="languages">
-                  <option value="en">English</option>
+                  <?php
+                    foreach ($languages_list as $language_details) { ?>
+                      <option value="<?php echo($language_details['code']); ?>">
+                        <?php echo($language_details['language']); ?>
+                      </option>
+                    <?php
+                  }
+                  ?>
                 </select>
               </div>
             </div>

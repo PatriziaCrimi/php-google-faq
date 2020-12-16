@@ -543,6 +543,9 @@ footer .language-choice label {
 footer .language-choice select#language {
   margin-left: 10px;
 }
+footer .language-choice select#language option {
+  text-transform: capitalize;
+}
 footer .language-choice::before {
   content: "\F27A";
   font-weight: bold;

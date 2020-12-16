@@ -15,6 +15,10 @@ footer {
 
     select#language {
       margin-left: $margin_unit;
+
+      option {
+        text-transform: capitalize;
+      }
     }
   }
 
