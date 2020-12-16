@@ -5,8 +5,10 @@ body {
   font-weight: $font_weight;
 }
 
-.container {
+.container,
+.container-fluid {
   margin: 0 auto;
+  padding: 0 $padding_unit;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */
@@ -15,6 +17,7 @@ body {
 @media screen and (min-width: 576px) {
   .container {
     max-width: 540px;
+    padding: 0;
   }
 }
 

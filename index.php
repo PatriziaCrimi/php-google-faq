@@ -61,14 +61,26 @@
     <div id="page-wrapper">
       <!-- Header -->
       <header>
+        <!-- Navbar -->
         <nav>
           <div class="container-fluid">
-            <h1>
-              <?php
-              echo($title);
-              ?>
-            </h1>
-          </div>
+            <div class="row">
+              <div id="nav-left">
+                <i class="fas fa-bars"></i>
+                <h1> <?php echo($title); ?> </h1>
+              </div>
+              <div id="nav-right">
+                <div class="app">
+                  <i class="fas fa-ellipsis-h"></i>
+                  <i class="fas fa-ellipsis-h"></i>
+                  <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="user">
+                  <img src="img/user.jpg" alt="User picture">
+                </div>
+              </div>
+            </div>
+          </div>   <!-- Closing Nav container -->
         </nav>
       </header>
       <!-- Main -->

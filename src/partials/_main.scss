@@ -1,6 +1,11 @@
+main {
+  background-color: $primary_bg_color;
+  padding-top: $height_navbar;
+}
+
 main .faq-wrapper {
   width: $full_width;
-  padding-top: $padding_unit * 2;
+  padding-top: $padding_unit;
   padding-bottom: $padding_unit;
 }
 
@@ -21,4 +26,13 @@ main .faq-wrapper {
   letter-spacing: 0.2px;
   line-height: $line_height;
   padding-top: $padding_unit;
+}
+
+/* ------------------- MEDIA QUERY ------------------- */
+
+/* Breakpoint Small 576px sm */
+@media screen and (min-width: 576px) {
+  main {
+    padding-top: $height_navbar + 10px;
+  }
 }

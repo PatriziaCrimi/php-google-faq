@@ -351,8 +351,10 @@ body {
   font-weight: 400;
 }
 
-.container {
+.container,
+.container-fluid {
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */
@@ -360,6 +362,7 @@ body {
 @media screen and (min-width: 576px) {
   .container {
     max-width: 540px;
+    padding: 0;
   }
 }
 /* Breakpoint Medium 768px md */
@@ -380,9 +383,55 @@ body {
     max-width: 1140px;
   }
 }
+header nav {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0px 0.5px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+nav .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav #nav-left {
+  display: flex;
+  align-items: center;
+}
+
+#nav-left h1 {
+  color: #3c4043;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
+nav #nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* ------------------- MEDIA QUERY ------------------- */
+/* Breakpoint Small 576px sm */
+@media screen and (min-width: 576px) {
+  header nav {
+    height: 70px;
+  }
+}
+main {
+  background-color: #fff;
+  padding-top: 60px;
+}
+
 main .faq-wrapper {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -403,4 +452,12 @@ main .faq-wrapper {
   letter-spacing: 0.2px;
   line-height: 24px;
   padding-top: 20px;
+}
+
+/* ------------------- MEDIA QUERY ------------------- */
+/* Breakpoint Small 576px sm */
+@media screen and (min-width: 576px) {
+  main {
+    padding-top: 70px;
+  }
 }
