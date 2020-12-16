@@ -42,6 +42,24 @@
       ],  // Closing answer
     ],
   ];  // Closing FAQ list
+  $footer_links = [
+    [
+      'name' => 'Google',
+      'url' => '#',
+    ],
+    [
+      'name' => 'Tutto su Google',
+      'url' => '#',
+    ],
+    [
+      'name' => 'Privacy',
+      'url' => '#',
+    ],
+    [
+      'name' => 'Termini',
+      'url' => '#',
+    ],
+  ];
 ?>
 
 <!-- ............................. HTML ............................. -->
@@ -120,18 +138,16 @@
             </div>
             <div class="col">
               <ul class="footer-links">
-                <li>
-                  <a href="#">Google</a>
-                </li>
-                <li>
-                  <a href="#">Tutto su Google</a>
-                </li>
-                <li>
-                  <a href="#">Privacy</a>
-                </li>
-                <li>
-                  <a href="#">Termini</a>
-                </li>
+                <?php
+                foreach ($footer_links as $link_details) { ?>
+                  <li>
+                    <a href="<?php echo($link_details['url'])?>">
+                      <?php echo($link_details['name'])?>
+                    </a>
+                  </li>
+                  <?php
+                }
+                ?>
               </ul>
             </div>
           </div>
