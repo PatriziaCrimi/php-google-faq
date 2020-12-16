@@ -7,6 +7,32 @@
   */
 
   $title = 'Domande frequenti';
+  $section_details = [
+    'title' => 'Privacy e termini',
+    'url' => '#',
+  ];
+  $nav_menu_links = [
+    [
+      'link' => 'Introduzione',
+      'url' => '#',
+    ],
+    [
+      'link' => 'Norme sulla privacy',
+      'url' => '#',
+    ],
+    [
+      'link' => 'Termini di servizio',
+      'url' => '#',
+    ],
+    [
+      'link' => 'Tecnologie',
+      'url' => '#',
+    ],
+    [
+      'link' => 'Domande frequenti',
+      'url' => '#',
+    ],
+  ];
   $question = 'question';
   $answer = 'answer';
   $faq_list = [
@@ -150,10 +176,18 @@
           <div class="container-fluid">
             <div class="row">
               <div id="nav-left">
+                <!-- Display only in Mobile & Tablet -->
                 <div class="burger-icon">
                   <i class="fas fa-bars"></i>
                 </div>
                 <h1> <?php echo($title); ?> </h1>
+                <!-- Display only in Desktop  -->
+                <a class="logo" href="#">
+                  <img src="img/google_logo.svg" alt="Google logo">
+                </a>
+                <a class="section-title" href="<?php echo($section_details['url']); ?>">
+                  <?php echo($section_details['title']); ?>
+                </a>
               </div>
               <div id="nav-right">
                 <a class="app" href="#">
@@ -164,6 +198,22 @@
                 <a class="user" href="#">
                   <img src="img/user.jpg" alt="User picture">
                 </a>
+              </div>
+            </div>
+            <div class="row">
+              <div id="nav-menu">
+                <ul>
+                  <?php
+                    foreach ($nav_menu_links as $link_details) { ?>
+                      <li>
+                        <a href="<?php echo($link_details['url']); ?>">
+                          <?php echo($link_details['link']); ?>
+                        </a>
+                      </li>
+                      <?php
+                    }
+                    ?>
+                </ul>
               </div>
             </div>
           </div>   <!-- Closing Nav container -->

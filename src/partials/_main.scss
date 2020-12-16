@@ -1,6 +1,6 @@
 main {
   background-color: $primary_bg_color;
-  padding-top: $height_navbar;
+  padding-top: $height_nav;
 
   .faq-wrapper {
     width: $full_width;
@@ -22,6 +22,20 @@ main {
 /* Breakpoint Small 576px sm */
 @media screen and (min-width: 576px) {
   main {
-    padding-top: $height_navbar + 10px;
+    padding-top: $height_nav_sm;
+  }
+}
+
+/* Breakpoint Medium 768px md */
+@media screen and (min-width: 768px) {
+  main {
+    padding-top: $height_nav_sm + $padding_unit * 2;
+  }
+}
+
+/* Breakpoint Extra Large 1200px xl */
+@media screen and (min-width: 1200px) {
+  main {
+    padding-top: $height_nav_xl + $padding_unit * 4;
   }
 }

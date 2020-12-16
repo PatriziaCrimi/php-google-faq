@@ -1,6 +1,6 @@
 header nav {
   width: 100%;
-  height: $height_navbar;
+  height: $height_nav;
   background-color: $primary_bg_color;
   position: fixed;
   top: 0;
@@ -28,9 +28,14 @@ nav #nav-left {
     transition: background-color $hover_time;
 
     i {
-      color: $icon_color;
+      color: $links_color;
       font-size: $font-size + 3px;
     }
+  }
+
+  a.logo,
+  a.section-title {
+    display: none;
   }
 }
 
@@ -50,7 +55,7 @@ nav #nav-right {
 
     i {
       font-size: $font-size + 1px;
-      color: $icon_color;
+      color: $links_color;
       margin: -4.5px 0;
     }
   }
@@ -77,11 +82,92 @@ nav #nav-right {
   background-color: $hover_bg_color;
 }
 
+nav #nav-menu {
+  display: none;
+}
+
 /* ------------------- MEDIA QUERY ------------------- */
 
 /* Breakpoint Small 576px sm */
 @media screen and (min-width: 576px) {
   header nav {
-    height: $height_navbar + 10px;
+    height: $height_nav_sm;
+  }
+}
+
+/* Breakpoint Extra Large 1200px xl */
+@media screen and (min-width: 1200px) {
+  header nav {
+    height: $height_nav_xl;
+  }
+
+  nav .row {
+    height: calc(100% / 2);
+  }
+
+  nav #nav-left {
+    padding-top: $padding_unit;
+
+    .burger-icon,
+    h1 {
+      display: none;
+    }
+
+    a.logo {
+      display: block;
+      width: $logo_width;
+    }
+
+    a.logo img {
+      width: $full_width;
+      vertical-align: middle;
+    }
+
+    a.section-title {
+      display: block;
+      margin-left: $margin_unit;
+      color: $links_color;
+      font-size: $font-size + 7;
+      font-weight: $font_weight;
+    }
+  }
+
+  nav #nav-right {
+    padding-top: $padding_unit;
+  }
+
+  nav #nav-menu {
+    display: block;
+    height: $full_height;
+    width: $full_width;
+
+    ul {
+      display: block;
+      height: $full_height;
+      width: $full_width;
+
+      li {
+        display: inline-block;
+        height: $full_height;
+        font-size: $font-size + 1;
+        font-weight: $font_weight + 100;
+        letter-spacing: 0.5px;
+        margin-right: $margin_unit * 4;
+
+        a {
+          display: block;
+          height: $full_height;
+          color: $links_color;
+          padding-top: $padding_unit;
+        }
+      }
+
+      li:last-child {
+        a {
+          color: $active_color;
+          border-bottom: 3px solid $active_color;
+        }
+      }
+    }
   }
 }

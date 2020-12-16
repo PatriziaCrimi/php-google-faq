@@ -378,6 +378,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container,
 .container-fluid {
   margin: 0 auto;
@@ -456,6 +460,10 @@ nav #nav-left .burger-icon i {
   color: #5f6368;
   font-size: 17px;
 }
+nav #nav-left a.logo,
+nav #nav-left a.section-title {
+  display: none;
+}
 
 nav #nav-right {
   height: 100%;
@@ -496,11 +504,81 @@ nav #nav-right a.user img {
   background-color: rgba(60, 64, 67, 0.08);
 }
 
+nav #nav-menu {
+  display: none;
+}
+
 /* ------------------- MEDIA QUERY ------------------- */
 /* Breakpoint Small 576px sm */
 @media screen and (min-width: 576px) {
   header nav {
     height: 70px;
+  }
+}
+/* Breakpoint Extra Large 1200px xl */
+@media screen and (min-width: 1200px) {
+  header nav {
+    height: 100px;
+  }
+
+  nav .row {
+    height: calc(100% / 2);
+  }
+
+  nav #nav-left {
+    padding-top: 20px;
+  }
+  nav #nav-left .burger-icon,
+nav #nav-left h1 {
+    display: none;
+  }
+  nav #nav-left a.logo {
+    display: block;
+    width: 75px;
+  }
+  nav #nav-left a.logo img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  nav #nav-left a.section-title {
+    display: block;
+    margin-left: 10px;
+    color: #5f6368;
+    font-size: 21px;
+    font-weight: 400;
+  }
+
+  nav #nav-right {
+    padding-top: 20px;
+  }
+
+  nav #nav-menu {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  nav #nav-menu ul {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  nav #nav-menu ul li {
+    display: inline-block;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-right: 40px;
+  }
+  nav #nav-menu ul li a {
+    display: block;
+    height: 100%;
+    color: #5f6368;
+    padding-top: 20px;
+  }
+  nav #nav-menu ul li:last-child a {
+    color: #3367d6;
+    border-bottom: 3px solid #3367d6;
   }
 }
 main {
@@ -524,6 +602,18 @@ main .faq-wrapper .faq-box:last-of-type {
 @media screen and (min-width: 576px) {
   main {
     padding-top: 70px;
+  }
+}
+/* Breakpoint Medium 768px md */
+@media screen and (min-width: 768px) {
+  main {
+    padding-top: 110px;
+  }
+}
+/* Breakpoint Extra Large 1200px xl */
+@media screen and (min-width: 1200px) {
+  main {
+    padding-top: 180px;
   }
 }
 footer {
