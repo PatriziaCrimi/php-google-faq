@@ -343,3 +343,41 @@ template {
 [hidden] {
   display: none;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.faq-box {
+  border: 1px solid black;
+}
+
+/* ------------------- MEDIA QUERY ------------------- */
+/* Breakpoint Small 576px sm */
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+/* Breakpoint Medium 768px md */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+/* Breakpoint Large 992px lg */
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+/* Breakpoint Extra Large 1200px xl */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
