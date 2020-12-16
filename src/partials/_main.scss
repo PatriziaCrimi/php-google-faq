@@ -1,0 +1,24 @@
+main .faq-wrapper {
+  width: $full_width;
+  padding-top: $padding_unit * 2;
+  padding-bottom: $padding_unit;
+}
+
+.faq-wrapper .faq-box {
+  width: $full_width;
+  padding-bottom: $padding_unit * 3;
+}
+
+.faq-box h2 {
+  color: $secondary_color;
+  font-size: $title_size;
+  font-weight: $title_weight;
+  line-height: $line_height + 8;
+}
+
+.faq-box p {
+  margin: $margin_unit 0;
+  letter-spacing: 0.2px;
+  line-height: $line_height;
+  padding-top: $padding_unit;
+}

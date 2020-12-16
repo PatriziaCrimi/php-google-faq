@@ -1,13 +1,12 @@
 body {
-  font-family: 'Roboto', sans-serif;  // 100;300;400;500;700;900
+  font-family: $font_family;  // 100;300;400;500;700;900
+  color: $primary_color;
+  font-size: $font-size;
+  font-weight: $font_weight;
 }
 
 .container {
   margin: 0 auto;
-}
-
-.faq-box {
-  border: 1px solid black;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */

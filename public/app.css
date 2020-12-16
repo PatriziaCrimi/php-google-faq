@@ -346,14 +346,13 @@ template {
 
 body {
   font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .container {
   margin: 0 auto;
-}
-
-.faq-box {
-  border: 1px solid black;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */
@@ -380,4 +379,28 @@ body {
   .container {
     max-width: 1140px;
   }
+}
+main .faq-wrapper {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.faq-wrapper .faq-box {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.faq-box h2 {
+  color: #3c4043;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.faq-box p {
+  margin: 10px 0;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  padding-top: 20px;
 }

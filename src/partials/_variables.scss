@@ -1,0 +1,20 @@
+// ---------------------------  Variables ----------------------------
+
+// Font
+$font_family: 'Roboto', sans-serif;  // 100;300;400;500;700;900
+$font-size: 14px;
+$title_size: $font-size + 10px;
+$font_weight: 400;
+$title_weight: $font_weight + 100;
+
+// Colors
+$primary_color: rgba(0,0,0,0.87);
+$secondary_color: #3c4043;
+
+// Dimensions
+$full_width: 100%;
+$line_height: 24px;
+
+// Margins & Padding
+$padding_unit: 20px;
+$margin_unit: 10px;
