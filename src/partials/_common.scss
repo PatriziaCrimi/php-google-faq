@@ -5,6 +5,28 @@ body {
   font-weight: $font_weight;
 }
 
+h1 {
+  color: $secondary_color;
+  font-size: $title_size - 4px;
+  font-weight: $font_weight;
+  letter-spacing: 0.25px;
+  margin-left: $margin_unit;
+}
+
+h2 {
+  color: $secondary_color;
+  font-size: $title_size;
+  font-weight: $title_weight;
+  line-height: $line_height + 8;
+}
+
+p {
+  margin: $margin_unit 0;
+  letter-spacing: 0.2px;
+  line-height: $line_height;
+  padding-top: $padding_unit;
+}
+
 a {
   text-decoration: none;
 }
@@ -17,6 +39,15 @@ a {
 
 .container-fluid {
   height: $full_height;
+}
+
+.row {
+  width: $full_width;
+}
+
+.col {
+  width: $full_width;
+  padding: $padding_unit / 3 0;
 }
 
 /* ------------------- MEDIA QUERY ------------------- */

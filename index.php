@@ -67,7 +67,7 @@
             <div class="row">
               <div id="nav-left">
                 <div class="burger-icon">
-                  <i class="fas fa-bars"></i>                  
+                  <i class="fas fa-bars"></i>
                 </div>
                 <h1> <?php echo($title); ?> </h1>
               </div>
@@ -110,6 +110,30 @@
       <footer>
         <div class="container">
           <div class="row">
+            <div class="col">
+              <div class="language-choice">
+                <label for="language">Cambia lingua:</label>
+                <select id="language" name="languages">
+                  <option value="en">English</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <ul class="footer-links">
+                <li>
+                  <a href="#">Google</a>
+                </li>
+                <li>
+                  <a href="#">Tutto su Google</a>
+                </li>
+                <li>
+                  <a href="#">Privacy</a>
+                </li>
+                <li>
+                  <a href="#">Termini</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>  <!-- Closing Footer container -->
       </footer>
