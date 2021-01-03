@@ -161,7 +161,7 @@
     <meta charset="utf-8">
     <title>Domande frequenti - Privacy e termini - Google</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="public/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -183,7 +183,7 @@
                 <h1> <?php echo($title); ?> </h1>
                 <!-- Display only in Desktop  -->
                 <a class="logo" href="#">
-                  <img src="img/google_logo.svg" alt="Google logo">
+                  <img src="public/img/google_logo.svg" alt="Google logo">
                 </a>
                 <a class="section-title" href="<?php echo($section_details['url']); ?>">
                   <?php echo($section_details['title']); ?>
@@ -196,7 +196,7 @@
                   <i class="fas fa-ellipsis-h"></i>
                 </a>
                 <a class="user" href="#">
-                  <img src="img/user.jpg" alt="User picture">
+                  <img src="public/img/user.jpg" alt="User picture">
                 </a>
               </div>
             </div>
