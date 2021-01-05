@@ -27,6 +27,7 @@ footer {
     @include before-after;
     color: #4cb5f8;
     font-size: $font-size + 2;
+    transform: rotate(360deg) scaleX(-1);
   }
 
   ul.footer-links {

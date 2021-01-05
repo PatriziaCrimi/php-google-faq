@@ -642,6 +642,7 @@ footer .language-choice::before {
   font-family: "Font Awesome 5 Free";
   color: #4cb5f8;
   font-size: 16px;
+  transform: rotate(360deg) scaleX(-1);
 }
 footer ul.footer-links li::before {
   content: "\F111";
